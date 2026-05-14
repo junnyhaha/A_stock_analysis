@@ -345,8 +345,7 @@ jobs:
           
         run: |
 
-STOCK_LIST=$(grep -v '^#' stock.txt | grep -v '^$' | paste -sd "," -)
-    echo "STOCK_LIST=$STOCK_LIST" >> $GITHUB_ENV
+
 
           # 处理 LITELLM YAML 配置文件
           if [ -n "$LITELLM_CONFIG_YAML" ] && [ -n "$LITELLM_CONFIG" ]; then
